@@ -45,6 +45,7 @@ str_nextWord proc,
 	pString:ptr byte,
 	delimiter:byte
 
+	
 	mov al,delimiter
 	mov esi,pString
 	cld

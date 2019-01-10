@@ -27,7 +27,7 @@ tar: ptr byte
 main proc
 	
 	mov eax,0
-	invoke str_find, addr [source], addr [target]
+	invoke str_find, addr [source], addr [target] 
 
 	cmp eax,0
 	js no

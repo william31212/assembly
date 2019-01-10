@@ -14,7 +14,7 @@ sourceStr byte '12343456789',0
 Str_concat proto,
 	target:ptr byte,
 	source:ptr byte
-	
+
 
 main proc
 	invoke Str_concat,addr targetStr,addr sourceStr
