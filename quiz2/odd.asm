@@ -7,7 +7,7 @@ includelib \masm32\lib\User32.lib
 
 .data
 
-str1 byte " ",0
+str1 byte 1000 DUP(0)
 semicoma byte " : ",0
 ascii byte 128 DUP(0)
 cal proto,
@@ -15,6 +15,10 @@ cal proto,
 
 .code
 main proc
+
+	mov ecx,1000
+	mov edx,offset str1
+	call readstring
 	
 	invoke cal,addr str1
 
